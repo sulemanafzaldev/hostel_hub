@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Gradient border for water-like look -->
+    <stroke
+        android:width="8dp"
+        android:color="@android:color/transparent">
+        <gradient
+            android:type="sweep"
+            android:useLevel="false"
+            android:startColor="@color/blue"
+            android:centerColor="@color/teal_200"
+            android:endColor="@color/blue_light"
+            android:angle="0" />
+    </stroke>
+
+    <padding
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp" />
+</shape>

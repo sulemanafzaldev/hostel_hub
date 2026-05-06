@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner Image -->
+        <ImageView
+            android:id="@+id/ivAdBanner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_intro1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Overlay for Text visibility (Gradient or Semi-transparent) -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#40000000"
+            app:layout_constraintBottom_toBottomOf="@id/ivAdBanner"
+            app:layout_constraintEnd_toEndOf="@id/ivAdBanner"
+            app:layout_constraintStart_toStartOf="@id/ivAdBanner"
+            app:layout_constraintTop_toTopOf="@id/ivAdBanner" />
+
+        <!-- Title Overlay -->
+        <TextView
+            android:id="@+id/tvAdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/sen_bold"
+            android:text="Refer a Friend"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvAdSubtitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Subtitle Overlay -->
+        <TextView
+            android:id="@+id/tvAdSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Earn ₹500 per referral"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivAdBanner"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Bottom Control Section -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/ivAdBanner">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchAdStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:thumbTint="@color/white"
+                app:trackTint="#5D5FEF" />
+
+            <TextView
+                android:id="@+id/tvStatusLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Active"
+                android:textColor="#6E7191"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/switchAdStatus"
+                app:layout_constraintStart_toEndOf="@id/switchAdStatus"
+                app:layout_constraintTop_toTopOf="@id/switchAdStatus" />
+
+            <ImageView
+                android:id="@+id/btnDeleteAd"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#E53935" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

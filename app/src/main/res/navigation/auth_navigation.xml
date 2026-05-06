@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation.xml"
+    app:startDestination="@id/adminSignInFragment">
+
+    <fragment
+        android:id="@+id/adminSignInFragment"
+        android:name="com.bkuc.hostelhub.ui.admin.auth.fragment.AdminSignInFragment"
+        android:label="fragment_admin_sign_in"
+        tools:layout="@layout/fragment_admin_sign_in" >
+        <action
+            android:id="@+id/action_adminSignInFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.bkuc.hostelhub.ui.admin.auth.fragment.RegisterFragment"
+        android:label="RegisterFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/addHostelFragment"
+        android:name="com.bkuc.hostelhub.ui.admin.auth.fragment.AddHostelFragment"
+        android:label="fragment_add_hostel"
+        tools:layout="@layout/fragment_add_hostel" />
+</navigation>

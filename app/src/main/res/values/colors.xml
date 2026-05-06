@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#004CFF</color>
+    <color name="gray">#B8B8B8</color>
+    <color name="yellow">#FFC107</color>
+    <color name="black_2">#090A0A</color>
+    <color name="black_with_10_opacity">#1A000000</color>
+
+    <color name="suva_grey">#949292</color>
+    <color name="orange">#EDAF20</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="white_gray">#F3F3F3</color>
+    <color name="search_text">#A0A5BA</color>
+    <color name="black_21_opacity">#36000000</color>
+    <color name="onboarding_color">#FFF8F6</color>
+
+    <color name="blue_light">#64B5F6</color>
+    <color name="teal_200">#03DAC5</color>
+
+
+    <color name="product_summary_bg">#F6F6F6</color>
+    <color name="tip_selector">#FFF6EA</color>
+    <color name="tip_selector_8_opacity">#15F9F6EE</color>
+    <color name="white_8_opacity">#15FFFFFF</color>
+    <color name="tip_save_text">#C9C9C9</color>
+
+
+    <color name="edittext_bg">#F0F5FA</color>
+    <color name="deep_orange">#F17A31</color>
+
+    <color name="orange_seekbar1">#FEA47A</color>
+    <color name="red_seekbar2">#EF2A39</color>
+    <color name="seekbar_bg">#F3F4F6</color>
+
+    <color name="reddish_color">#F40000</color>
+    <color name="delivery_address">#646982</color>
+    <color name="address_color">#52C7F6</color>
+    <color name="grayish">#7C7C7C</color>
+
+    <color name="green">#1CC019</color>
+    <color name="color_hot">#FF9800</color>
+    <color name="color_header">#5D43F9</color>
+
+    <color name="teal_700">#00897B</color>
+    <color name="dark_gray">#757575</color>
+
+    <color name="sky_blue">#3DB4F8</color>
+
+</resources>

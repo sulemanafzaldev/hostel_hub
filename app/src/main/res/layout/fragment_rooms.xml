@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_12sdp"
+    tools:context=".ui.admin.admindashboard.fragment.RoomsFragment">
+
+    <TextView
+        android:id="@+id/tvRoomCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 rooms total"
+        android:textColor="#6E7191"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnAddRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnAddRoom" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5D5FEF"
+        android:text="Add"
+        app:icon="@drawable/ic_add"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRooms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddRoom"
+        tools:listitem="@layout/item_room_card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
