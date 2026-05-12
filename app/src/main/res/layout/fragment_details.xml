@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#F8F9FE">
 
     <androidx.core.widget.NestedScrollView
@@ -161,24 +162,20 @@
                 <!-- Small Gallery Thumbnails -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal">
                     <!-- Repeat this CardView 4 times -->
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1"
-                        app:cardCornerRadius="12dp">
 
-                        <ImageView
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewImages"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_intro2" />
-                    </androidx.cardview.widget.CardView>
-                    <!-- ... Add others ... -->
+                            android:orientation="horizontal"
+                            tools:listitem="@layout/layout_hostel_images"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                           />
                 </LinearLayout>
 
                 <!-- CUSTOM TAB LAYOUT -->
