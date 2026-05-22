@@ -17,36 +17,36 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="24dp">
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/sen_bold"/>
 
         </RelativeLayout>
 
         <!-- Profile Card -->
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="4dp">
+            app:cardCornerRadius="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:cardElevation="2dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_profile_gradient"
-                android:padding="20dp">
+                android:padding="@dimen/_16sdp">
 
                 <FrameLayout
                     android:id="@+id/avatarContainer"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -63,8 +63,8 @@
                         android:layout_gravity="center"
                         android:text="PR"
                         android:textColor="@color/black_2"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/sen_bold" />
 
                     <!-- Edit Icon -->
                     <ImageView
@@ -128,7 +128,7 @@
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Menu Options List -->
         <com.google.android.material.card.MaterialCardView
